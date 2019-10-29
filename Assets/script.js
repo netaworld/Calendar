@@ -1,15 +1,22 @@
 
 
-// save to local storage//
+
 $(document).ready(function(){
+
+  // save to local storage//
     $(".btn-save").on("click",function(){
-  console.log("it saved it")
+      //$(this).siblings()
+      //console.log($(this).siblings().attr('id'))
+      localStorage.setItem( $(this).siblings().attr('id') ,$(this).siblings().val());
     })
 
+     //get out from storage//
+    //  var cat = localStorage.getItem('myCat')
+    console.log($(".timeBlock"))
+    //array loop and get id
+    $(timeBlock).
 
-    // localStorage.setItem('myCat', 'Tom');
+    //colors are changing by time//
 
 })
-//get out from storage//
 
-//colors are changing by time//
